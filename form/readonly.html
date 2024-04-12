@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readonly</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Readonly</legend>
+            <label for="goods_name">상품명</label>
+            <input type="text" name="goods_name" id="goods_name" value="" maxlength="20" placeholder="상품명을 입력해주세요.">
+            <br>
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name" value="홍길동" readonly>
+            <br>
+            <label for="name2">이름2</label>
+            <input type="text" name2="name" id="name2" value="홍길동" disabled>
+            <br>
+            <label for="addr">주소</label>
+            <input type="text" name="addr" id="addr" value="" maxlength="200" placeholder="주소를 입력해주세요.">
+            <br>
+            <label for="email">이메일</label>
+            <input type="email" name="email" id="email" value="" maxlength="200" placeholder="www@www.com">
+            <br>
+            <label for="phone">연락처</label>
+            <input type="tel" name="phone" id="phone" value="" maxlength="14" placeholder="010-1234-5678">
+        </fieldset>  
+        <input type="submit" value="주문하기">
+        &nbsp;
+        <input type="reset" value="취소하기">
+    </form>
+</body>
+</html>

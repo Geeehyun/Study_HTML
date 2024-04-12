@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오파일</title>
+</head>
+<body>
+    <!-- <embed src="./images/SAMPLE_1.MP3" height="60"> -->
+
+    <!-- 
+        audio, video 태그 쓰는 법 ① 
+        모든 속성을 다 안넣어줘도 됨. 스크립트 제어가 별로 필요하지 않을 유용
+    -->
+    <audio src="./images/SAMPLE_1.MP3" controls width="700"></audio>
+
+    <!-- 
+        audio, video 태그 쓰는 법 ② 
+        제어가 많이 필요할 때 이렇게 사용하면 유용 
+        / 파일 경로를 노출시키지 않기 위해 스크립트로 사용할 수 있으며 이 방법으로 사용 가능
+    -->
+    <audio controls id="audio_1" muted>
+        <source src="./images/SAMPLE_1.MP3">
+    </audio>
+    
+    <!-- 
+        경로
+        1. 상대경로 : 내 웹서버 기준 상대경로로 파일을 찾아옴(현재파일 기준 상대경로)
+        2. 절대경로 : 내 웹서버 기준 절대경로로 파일을 찾아옴(내 프로젝트 기준 절대경로)
+        3. url이용 : 네트워크를 나가서 DNS질의를 다시해서 해당 경로로 파일을 찾아옴
+        
+        => 3번의 경우 트래픽 사용량이 위 1,2번에 비해 늘어나기 때문에, 상황에 맞게 사용해야 함
+     -->
+</body>
+</html>

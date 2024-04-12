@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블2</title>
+</head>
+<body>
+    <table border="1px" width="400">
+    <!-- 위 사용한 border, width, bgcolor등의 기본속성은 html5에서 지원중지 됨 / 따라서 css이용을 권장 -->
+        <caption>선물용과 가정용 상품 구성</caption>
+        <thead>
+            <tr>
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>              
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">선물용</td>
+                <td bgcolor="red">3kg</td>
+                <td>11~16과</td>
+                <td>35,000</td>
+            </tr>
+            <tr>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000</td>
+            </tr>
+            <tr>
+                <td>가정용</td>
+                <td colspan="2">5kg / 18~26과</td>
+                <td>47,000</td>
+            </tr>
+            <tr>
+                <td>가정용</td>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>47,000</td>
+            </tr>
+        </tbody>    
+    </table>
+</body>
+</html>

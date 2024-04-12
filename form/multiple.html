@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Multiple</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Select 속성</legend>
+            <label for="area1">시/도</label>
+                <select name="area1" id="area1">
+                    <option value="선택">선택</option>
+                    <option value="서울">서울</option>
+                    <option value="강원">강원</option>
+                    <option value="충북">충북</option>
+                    <option value="충남">충남</option>
+                </select>            
+                <label for="area2">시/군/구</label>
+                <select name="area2" id="area2" size="2">
+                    <option value="선택">선택</option>
+                    <option value="강남구">강남구</option>
+                    <option value="서초구">서초구</option>
+                    <option value="양천구">양천구</option>
+                    <option value="양천구">동작구</option>
+                </select>            
+            <label for="area3">읍/면/동</label>
+                <select name="area3" id="area3" multiple>
+                    <option value="선택">선택</option>
+                    <option value="서초동">서초동</option>
+                    <option value="논현동">논현동</option>
+                    <option value="잠실1동">잠실1동</option>
+                    <option value="잠실2동">잠실2동</option>
+                </select>            
+        </fieldset>
+    </form>
+</body>
+</html>
